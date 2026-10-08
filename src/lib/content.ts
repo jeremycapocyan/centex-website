@@ -9,7 +9,7 @@ export const agency = {
   quote: "https://www.centexis.com/compare-quotes.html",
   contact: "https://www.centexis.com/contact-us.html",
   client: "https://www.centexis.com/client-center.html",
-  carriers: "https://www.centexis.com/contact-your-carrier.html",
+  carriers: "/#partners",
 };
 
 export const services = [
