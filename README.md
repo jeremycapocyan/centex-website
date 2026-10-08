@@ -23,7 +23,7 @@ Open http://127.0.0.1:3000. Use `pnpm build` to generate the deployable static s
 
 ## Connected services
 
-The quote selector links to Centex’s existing quote service for personal auto, home, and renters inquiries; other coverage choices link to the existing contact page. The customer portal remains on the existing Centex website. Carrier contacts are available in the local searchable directory; carrier websites open in new tabs. No quote is submitted, email sent, or insurance coverage bound by interacting with this local website. A future first-party form would need an approved submission endpoint and agency privacy wording.
+The quote selector links to Centex’s existing quote service for personal auto, home, and renters inquiries; other coverage choices link to the existing contact page. The Client Center links directly to the agency-specific EZLynx customer portal at https://customerservice.agentinsure.com/EzLynxCustomerService/web/centex/account/login, opening in a new tab. Authentication and customer account information remain on the EZLynx portal. Carrier contacts are available in the local searchable directory; carrier websites open in new tabs. No quote is submitted, email sent, or insurance coverage bound by interacting with this local website. A future first-party form would need an approved submission endpoint and agency privacy wording.
 
 Business information was verified from https://www.centexis.com/ and its About, Contact, Compare Quotes, Client Center, and Contact Your Carrier pages on October 8, 2026. Coverage examples are general discussion topics and must be confirmed by the agency before public launch. There are no fabricated reviews, pricing, savings, or ratings.
 
