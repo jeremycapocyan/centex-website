@@ -9,7 +9,7 @@ pnpm install
 pnpm dev
 ```
 
-Open http://127.0.0.1:3000. Use `pnpm build` to generate the deployable static site in `out/`, then `pnpm start` to preview the exported production site. This project uses static export; the start script serves the built files using the included Node.js static server.
+Open http://127.0.0.1:3000. Run `pnpm build` for a production build, then `pnpm start` to serve it. The website uses the Next.js server on Vercel so the quote-request API can send email. It is no longer a static export.
 
 ## Edit
 
@@ -23,7 +23,7 @@ Open http://127.0.0.1:3000. Use `pnpm build` to generate the deployable static s
 
 ## Connected services
 
-The quote selector links to Centex’s existing quote service for personal auto, home, and renters inquiries; other coverage choices link to the existing contact page. The Client Center links directly to the agency-specific EZLynx customer portal at https://customerservice.agentinsure.com/EzLynxCustomerService/web/centex/account/login, opening in a new tab. Authentication and customer account information remain on the EZLynx portal. Carrier contacts are available in the local searchable directory; carrier websites open in new tabs. No quote is submitted, email sent, or insurance coverage bound by interacting with this local website. A future first-party form would need an approved submission endpoint and agency privacy wording.
+The quote form sends branded quote-request notifications from service@centexis.com to info@centexis.com through Microsoft Graph. The sender and recipient are fixed on the server, and replies go to the requester. Sending is disabled until the Microsoft 365 application credentials and activation flag are configured. See [Microsoft 365 setup](docs/microsoft-365-email-setup.md). The Client Center opens the agency-specific EZLynx customer portal in a new tab. Quote requests sent by this form are not automatically entered into EZLynx.
 
 Business information was verified from https://www.centexis.com/ and its About, Contact, Compare Quotes, Client Center, and Contact Your Carrier pages on October 8, 2026. Coverage examples are general discussion topics and must be confirmed by the agency before public launch. There are no fabricated reviews, pricing, savings, or ratings.
 
@@ -37,13 +37,14 @@ Fonts: DM Sans and Manrope from Google Fonts. Typography falls back to Arial if 
 
 ```sh
 pnpm typecheck
+pnpm test
 pnpm build
 ```
 
-Sites hosting configuration lives in `.openai/hosting.json`. Do not commit credentials or environment secrets.
+The old `.openai/hosting.json` static-hosting configuration and `scripts/serve.mjs` are historical and cannot serve the quote API. Deploy this version with Next.js on Vercel. Do not commit credentials or environment secrets.
 
 ## Vercel deployment
 
-`vercel.json` selects Vercel’s native Next.js framework, runs `npm run build`, and points the builder to `.next/`. Vercel reads the route manifests there and handles the static export in `out/` automatically. Do not set Vercel’s Output Directory to `out`: the native Next.js builder expects its route manifests in the Next.js build directory. The checked-in configuration overrides that dashboard setting. Import this repository with the project root set to the repository root (leave Root Directory empty). Pushes to `main` trigger a new deployment for connected Vercel projects.
+`vercel.json` selects Vercel’s native Next.js framework, runs `npm run build`, and points the builder to `.next/`. Vercel reads the route manifests there and deploys the Next.js pages and server-side quote API. Do not set Vercel’s Output Directory to `out`: the native Next.js builder expects its route manifests in the Next.js build directory. The checked-in configuration overrides that dashboard setting. Import this repository with the project root set to the repository root (leave Root Directory empty). Pushes to `main` trigger a new deployment for connected Vercel projects.
 
 Open the latest deployment after it finishes. Older deployment URLs keep their original build and configuration. If a new deployment still returns a platform 404, check that its Root Directory points to the directory containing `package.json` and `vercel.json`, and inspect its build logs. Deployment protection can require a Vercel login to visit preview URLs.
