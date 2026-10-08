@@ -1,0 +1,11 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { agency } from "@/lib/content";
+import { Icon } from "@/components/icon";
+
+export const metadata: Metadata = { title: "Client center", description: "Access policy documents, insurance ID cards, carrier contacts, and help from your Centex Insurance Solutions team." };
+
+export default function ClientCenter() {
+  const options = [{ icon: "document", name: "Your policies & documents", description: "Visit Centex’s existing customer portal to view available policy information, print ID cards, and access documents.", label: "Open client portal", url: agency.client }, { icon: "shield", name: "Carrier & claims support", description: "Find your insurance carrier’s claims and customer service contact information in Centex’s carrier directory.", label: "Find my carrier", url: agency.carriers }, { icon: "support", name: "A person in your corner", description: "Have a policy question or a change to discuss? Call your Centex team and select option 2 for general inquiries.", label: agency.phone, url: agency.telephone }];
+  return <><section className="page-hero"><div className="container"><nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Client center</span></nav><p className="eyebrow">HERE BEYOND THE QUOTE</p><h1>Your insurance.<br /><em>A little easier.</em></h1><p className="lead">A home for your next step, whether you need an ID card, a carrier contact, or a helpful conversation.</p></div></section><section className="section"><div className="container"><div className="client-options">{options.map(o => <article className="client-option" key={o.name}><span className="coverage-icon"><Icon name={o.icon} size={28} /></span><h2>{o.name}</h2><p>{o.description}</p><a className="button button-navy" href={o.url} target={o.url.startsWith("http") ? "_blank" : undefined} rel={o.url.startsWith("http") ? "noopener noreferrer" : undefined}>{o.label}</a></article>)}</div><p className="detail-note" style={{ marginTop: 28 }}>The client portal and carrier directory open on Centex’s existing website. Coverage changes and claims are handled by your agent or insurer.</p></div></section></>;
+}
