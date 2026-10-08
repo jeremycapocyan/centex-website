@@ -36,3 +36,9 @@ pnpm build
 ```
 
 Sites hosting configuration lives in `.openai/hosting.json`. Do not commit credentials or environment secrets.
+
+## Vercel deployment
+
+`vercel.json` selects the Next.js framework, runs `npm run build`, and serves the exported `out/` directory. Import this repository with the project root set to the repository root (leave Root Directory empty). Pushes to `main` trigger a new deployment for connected Vercel projects.
+
+Open the latest deployment after it finishes. Older deployment URLs keep their original build and configuration. If a new deployment still returns a platform 404, check that its Root Directory points to the directory containing `package.json` and `vercel.json`, and inspect its build logs. Deployment protection can require a Vercel login to visit preview URLs.
