@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Suspense } from "react";
 import { connection } from "next/server";
+import { Check } from "lucide-react";
 import { getMailConfig } from "@/lib/microsoft-mail";
 import { createFormToken } from "@/lib/quote-security";
+import { QuoteExperience } from "@/components/quote-experience";
 import "./quote-form.css";
 import "./consumer-quoting.css";
-import { QuoteFlow } from "@/components/quote-flow";
-import { ConsumerQuoting } from "@/components/consumer-quoting";
 
 export const metadata: Metadata = { title: "Get a free insurance quote", description: "Get instant auto and home quotes through the Centex EZLynx quoting tool, or contact our Texas team for other insurance options." };
 
@@ -17,5 +18,5 @@ export default async function QuotePage({ searchParams }: { searchParams: Promis
   const agentFirst = Boolean(coverage && !["auto", "home"].includes(coverage));
   const config = getMailConfig();
   const formToken = config ? createFormToken(config.clientSecret) : null;
-  return <><section className="page-hero"><div className="container"><nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Get a quote</span></nav><p className="eyebrow">YOUR COVERAGE. YOUR CHOICE.</p><h1>A little more peace of mind<br />starts <em>right here.</em></h1><p className="lead">Compare auto and home quotes online, or talk with our local team about coverage for the rest of your life.</p></div></section><section className="section quote-service-section"><div className="container"><div className="quote-route-links"><a className="button button-primary" href="#instant-quote">Instant auto &amp; home quotes</a><a className="text-link" href="#agent-request">Other coverage &amp; agent help ↓</a></div><details className="agent-request-disclosure" id="agent-request" open={agentFirst}><summary>Business, life, renters, or another coverage? Connect with an agent.</summary><div className="agent-request-content"><Suspense fallback={<p>Loading your coverage options…</p>}><QuoteFlow formToken={formToken} /></Suspense></div></details><ConsumerQuoting /></div></section></>;
+  return <><section className="quote-welcome"><div className="container"><nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Get a quote</span></nav><div className="quote-welcome-grid"><div><p className="eyebrow">YOUR NEXT CHAPTER. COVERED.</p><h1>Good coverage starts<br />with <em>a conversation.</em></h1><p>Start your auto or home quote online.<br />Keep a local team in your corner.</p><div className="quote-welcome-points"><span><Check size={15} />Independent advice</span><span><Check size={15} />Texas-wide service</span></div></div><div className="quote-welcome-photo"><Image src="/images/texas-home-auto.webp" alt="Illustrative Texas home and vehicle" fill preload sizes="(max-width: 760px) 100vw, 40vw" /><div className="quote-photo-caption"><span>FOR THE LIFE YOU’RE BUILDING</span><strong>Home. Auto. What’s next.</strong></div></div></div></div></section><section className="section quote-service-section"><div className="container"><Suspense fallback={<p>Loading your quote options…</p>}><QuoteExperience formToken={formToken} agentFirst={agentFirst} /></Suspense></div></section></>;
 }
