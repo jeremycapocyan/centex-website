@@ -6,7 +6,7 @@ export const agency = {
   address: "551 S I-35 Frontage Rd #300",
   city: "Round Rock, TX 78664",
   map: "https://www.google.com/maps/search/?api=1&query=551+S+I-35+Frontage+Rd+%23300+Round+Rock+TX+78664",
-  quote: "https://www.centexis.com/compare-quotes.html",
+  quote: "https://www.agentinsure.com/compare/auto-insurance-home-insurance/centex/quote.aspx",
   contact: "https://www.centexis.com/contact-us.html",
   client: "https://customerservice.agentinsure.com/EzLynxCustomerService/web/centex/account/login",
   carriers: "/#partners",
