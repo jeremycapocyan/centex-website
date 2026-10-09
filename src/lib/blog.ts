@@ -1,12 +1,14 @@
 export type BlogPost = {
   slug: string; title: string; description: string; category: string;
   published: string; updated: string; sourceDate: string; sourceTitle: string; sourceUrl: string;
+  image: string; imageAlt: string;
   coverage: string; sections: { heading: string; text: string }[];
 };
 
 export const posts: BlogPost[] = [
   {
     slug: "texas-home-auto-insurance-rate-update-october-2026",
+    image: "/images/texas-home-auto.webp", imageAlt: "Illustration of a limestone Texas home with a blue crossover in the driveway",
     title: "Texas home and auto rate filings show signs of relief",
     description: "An October 2026 Texas insurance update: what lower rate filings mean, and what to compare before your next home or auto renewal.",
     category: "Market update", published: "2026-10-09", updated: "2026-10-09", sourceDate: "2026-10-08",
@@ -20,6 +22,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "texas-roof-age-home-insurance-guidance-2026",
+    image: "/images/texas-roof.webp", imageAlt: "Illustration of charcoal roof shingles on a limestone home in the Texas Hill Country",
     title: "An older roof does not tell the whole insurance story",
     description: "TDI clarifies the distinction between roof age and physical condition in Texas home insurance decisions. Here is what homeowners should know.",
     category: "Home insurance", published: "2026-10-09", updated: "2026-10-09", sourceDate: "2026-09-29",
@@ -33,6 +36,7 @@ export const posts: BlogPost[] = [
   },
   {
     slug: "texas-insurance-pricing-customer-loyalty-guidance",
+    image: "/images/coverage-conversation.webp", imageAlt: "Illustration of customers discussing coverage with an adviser in a bright office",
     title: "Texas reminds insurers: price risk, not customer loyalty",
     description: "A September TDI bulletin addresses pricing unrelated to insurance risk. Learn what to ask when reviewing your Texas home or auto renewal.",
     category: "Consumer news", published: "2026-10-09", updated: "2026-10-09", sourceDate: "2026-09-02",
@@ -48,4 +52,5 @@ export const posts: BlogPost[] = [
 
 export const getPosts = () => [...posts].sort((a, b) => b.published.localeCompare(a.published));
 export const getPost = (slug: string) => posts.find(post => post.slug === slug);
+export const readingMinutes = (post: BlogPost) => Math.max(1, Math.ceil(post.sections.reduce((n, section) => n + section.text.split(/\s+/).length, 0) / 200));
 export const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
