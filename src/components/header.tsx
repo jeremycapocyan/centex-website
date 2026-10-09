@@ -15,7 +15,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
   const home = path === "/";
-  const links = [{ label: "Coverage", href: "/#coverage" }, { label: "Why Centex", href: "/#about" }, { label: "Our partners", href: "/#partners" }, { label: "Client center", href: "/client-center/" }, { label: "Contact", href: "/#contact" }];
+  const links = [{ label: "Coverage", href: "/#coverage" }, { label: "Why Centex", href: "/#about" }, { label: "Our partners", href: "/#partners" }, { label: "Client center", href: "/client-center/" }, { label: "Journal", href: "/blog/" }, { label: "Contact", href: "/#contact" }];
   return <>
     <a className="skip-link" href="#main">Skip to content</a>
     <div className="topbar"><div className="container topbar-inner"><span><Icon name="pin" size={14} /> Proudly rooted in Round Rock. Serving all of Texas.</span><a href={agency.telephone}><Icon name="phone" size={13} /> Let’s talk: <strong>{agency.phone}</strong></a></div></div>

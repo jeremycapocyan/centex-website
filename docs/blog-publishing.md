@@ -1,0 +1,11 @@
+# Publishing the Centex journal
+
+Posts live in `src/lib/blog.ts`. Add an original article with a unique descriptive slug, title, description, category, actual publication and update dates, source date, primary-source title and URL, related coverage slug, and sections. New entries automatically appear on the homepage, journal index, article routes, related stories, social images, and sitemap after a build and deployment.
+
+Research current primary sources such as TDI, FEMA, NOAA, or NAIC. Read the underlying release, verify its date, and distinguish proposals from adopted rules and effective dates. Link every source in the article; extend the source model if an article needs multiple sources. Do not reproduce articles, invent savings, promise coverage, invent expert review, or change publication dates to simulate freshness. Prefer a useful, original explanation over a target word count. Avoid duplicate topics and keyword stuffing.
+
+Weekly cadence: Mondays at 9:00 a.m. Asia/Manila, via a Codex thread automation. The automation researches, writes one post, runs checks, commits only its changes, pushes to origin/main, and verifies the Vercel deployment. This is a Codex automation, not a Vercel cron; execution depends on the automation being able to access the local project and authenticated tools. If no substantive new news is available, publish a clearly labeled evergreen guide based on current official sources. Report blockers rather than publishing unverified material.
+
+Before publishing: run `npm test` and `npm run build`; verify the new route, canonical, social image, structured data, sitemap, links, and mobile layout. Do not overwrite unrelated work or force-push. Keep mail credentials and quote delivery configuration untouched.
+
+SEO uses the current production host. When the new site moves to the Centex custom domain, set `SITE_URL` to its final HTTPS origin in Vercel and redeploy. Coordinate redirects from the former host. Verify domain ownership in Google Search Console and submit `/sitemap.xml`; this requires the site's owner and is not completed by adding metadata. Search ranking and indexing are not guaranteed.
