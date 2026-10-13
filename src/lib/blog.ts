@@ -7,6 +7,38 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    "slug": "life-insurance-planning-round-rock-families",
+    "title": "Life insurance planning: a starting point for Round Rock families",
+    "description": "An evergreen guide to term and permanent life insurance, family priorities, and questions to bring to a Centex coverage conversation.",
+    "category": "Evergreen guide",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "sourceDate": "2026-09",
+    "sourceTitle": "Consider life insurance to protect your loved ones",
+    "sourceUrl": "https://www.tdi.texas.gov/column/consider-life-insurance-to-protect-your-loved-ones.html",
+    "image": "/images/family-life-planning.webp",
+    "imageAlt": "AI-generated illustration of two parents and their child sitting together on a limestone porch",
+    "coverage": "life",
+    "sections": [
+      {
+        "heading": "Start with the people who depend on you",
+        "text": "This evergreen guide draws on the Texas Department of Insurance's September 2026 consumer column. Life insurance can help support the people you name as beneficiaries after your death. TDI highlights needs such as housing, child care, education, debts, and everyday expenses."
+      },
+      {
+        "heading": "Match the policy conversation to your timeline",
+        "text": "Term life insurance covers a set period and is generally the simpler, less expensive option. Permanent coverage is designed to last throughout your life when its requirements are met, usually costs more, and can be more complex. TDI recommends discussing permanent coverage with a financial planner to assess its fit."
+      },
+      {
+        "heading": "Bring a short family checklist",
+        "text": "Before a Round Rock coverage conversation, write down who relies on your income or care, the expenses you want help addressing, and how long those responsibilities may last. Bring details of any existing life coverage and a budget you can sustain. Ask the agent to explain premium requirements, policy limits, and what happens when a term ends."
+      },
+      {
+        "heading": "Make the next step personal",
+        "text": "A growing family, a home purchase, or support for an aging parent can prompt a fresh conversation. Centex can help you explore life insurance options and the questions that matter to your household. The appropriate amount and type of coverage depend on your circumstances; this guide does not establish eligibility or guarantee a benefit."
+      }
+    ]
+  },
+  {
     slug: "texas-home-auto-insurance-rate-update-october-2026",
     image: "/images/texas-home-auto.webp", imageAlt: "Illustration of a limestone Texas home with a blue crossover in the driveway",
     title: "Texas home and auto rate filings show signs of relief",
@@ -53,4 +85,8 @@ export const posts: BlogPost[] = [
 export const getPosts = () => [...posts].sort((a, b) => b.published.localeCompare(a.published));
 export const getPost = (slug: string) => posts.find(post => post.slug === slug);
 export const readingMinutes = (post: BlogPost) => Math.max(1, Math.ceil(post.sections.reduce((n, section) => n + section.text.split(/\s+/).length, 0) / 200));
-export const formatDate = (date: string) => new Intl.DateTimeFormat("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
+// Preserve month-only source dates instead of inventing a publication day.
+export const formatDate = (date: string) => {
+  const monthOnly = /^\d{4}-\d{2}$/.test(date);
+  return new Intl.DateTimeFormat("en-US", { month: "long", ...(monthOnly ? {} : { day: "numeric" as const }), year: "numeric", timeZone: "UTC" }).format(new Date(`${date}${monthOnly ? "-01" : ""}T12:00:00Z`));
+};

@@ -18,3 +18,9 @@ Use case: photorealistic-natural. Asset type: wide editorial website photograph 
 
 Use case: photorealistic-natural. Asset type: premium editorial website image for independent insurance advice and comparing renewal prices. One natural photograph of two adult customers and an insurance adviser having a relaxed thoughtful conversation at a light oak desk in a bright contemporary office, seen from medium-wide candid angle; adviser in navy, customer in cream and other in muted sage, a laptop angled away, a simple closed blue folder and small plant. Diverse adults, natural believable faces and hands, soft daylight, approachable and professional, warm cream with navy accents. No readable documents, no text, no logos, no watermark. Wide landscape 3:2 composition, suitable for 16:9 crop. Generic illustrative people, not actual Centex employees.
  
+
+## October 13, 2026: family life planning
+
+Generated with the built-in image-generation tool. Saved as public/images/family-life-planning.webp (1440 x 960, WebP quality 82). Illustrative family, not actual Centex clients.
+
+Prompt: Use case: photorealistic-natural. Asset type: editorial cover for a life insurance planning guide for Round Rock families. Create a premium candid photograph of two adult parents and their young child enjoying a quiet afternoon together on the porch of a welcoming Central Texas limestone home, live oak and native landscaping softly blurred beyond. Medium-wide landscape 3:2 composition, natural believable faces and hands, relaxed affectionate interaction, soft warm daylight, navy blue, cream and muted sage clothing, sophisticated editorial photography. No text, logos, watermark or readable documents. Generic illustrative family, not actual Centex clients or a documented news event. Keep people centrally composed for responsive 16:9 cropping.
