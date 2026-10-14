@@ -27,8 +27,8 @@ test("email escapes user HTML, keeps comments, and embeds the real supplied logo
   assert.ok(!email.html.includes("<script>"));
   assert.ok(email.html.includes('src="cid:centex-logo"'));
   assert.ok(email.html.includes('href="mailto:taylor@example.com?subject=Re%3A'));
-  assert.equal(email.to, "info@centexis.com");
-  assert.equal(email.from, "service@centexis.com");
+  assert.equal(email.to, "service@centexis.com");
+  assert.equal(email.from, "getcovered@centexis.com");
   assert.equal(email.replyTo, sample.email);
   assert.ok(email.text.includes("Phone: (512) 555-0142"));
   assert.deepEqual(Buffer.from(centexLogoBase64, "base64"), readFileSync("public/brand/centex-logo.png"));
@@ -66,9 +66,9 @@ test("Microsoft sendMail receives fixed destination, reply-to, logo attachment, 
   await sendQuoteEmail(sample, "test-reference", config, fetcher);
   assert.equal(calls.length, 2);
   assert.ok(calls[0].url.startsWith("https://login.microsoftonline.com/"));
-  assert.equal(calls[1].url, "https://graph.microsoft.com/v1.0/users/service%40centexis.com/sendMail");
+  assert.equal(calls[1].url, "https://graph.microsoft.com/v1.0/users/getcovered%40centexis.com/sendMail");
   const body = JSON.parse(String(calls[1].options?.body));
-  assert.equal(body.message.toRecipients[0].emailAddress.address, "info@centexis.com");
+  assert.equal(body.message.toRecipients[0].emailAddress.address, "service@centexis.com");
   assert.equal(body.message.replyTo[0].emailAddress.address, "taylor@example.com");
   assert.equal(body.message.attachments[0].contentId, "centex-logo");
   assert.equal(body.message.attachments[0].isInline, true);

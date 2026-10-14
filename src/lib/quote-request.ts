@@ -12,8 +12,8 @@ export type QuoteRequest = {
 };
 
 export type QuoteErrors = Partial<Record<keyof QuoteRequest, string>>;
-export const QUOTE_RECIPIENT = "info@centexis.com";
-export const QUOTE_SENDER = "service@centexis.com";
+export const QUOTE_RECIPIENT = "service@centexis.com";
+export const QUOTE_SENDER = "getcovered@centexis.com";
 export const EMAIL_PATTERN = /^[A-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9](?:[A-Z0-9-]*[A-Z0-9])?(?:\.[A-Z0-9](?:[A-Z0-9-]*[A-Z0-9])?)+$/i;
 
 export function validateQuote(input: unknown): { data: QuoteRequest; errors: QuoteErrors } {
