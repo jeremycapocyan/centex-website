@@ -8,11 +8,11 @@ import { services, agency } from "@/lib/content";
 import { validateQuote, type QuoteErrors } from "@/lib/quote-request";
 import { Icon } from "./icon";
 
-export function QuoteFlow({ formToken }: { formToken: string | null }) {
+export function QuoteFlow({ formToken, coverage, onCoverageChange }: { formToken: string | null; coverage?: string; onCoverageChange?: (coverage: string) => void }) {
   const search = useSearchParams();
   const fromUrl = search.get("coverage");
   const [choice, setChoice] = useState<string | null>(null);
-  const selected = choice || (services.some(service => service.slug === fromUrl) ? fromUrl : "auto")!;
+  const selected = coverage || choice || (services.some(service => service.slug === fromUrl) ? fromUrl : "auto")!;
   const [errors, setErrors] = useState<QuoteErrors>({});
   const [message, setMessage] = useState("");
   const [pending, setPending] = useState(false);
@@ -66,7 +66,7 @@ export function QuoteFlow({ formToken }: { formToken: string | null }) {
   return <div className="quote-request-layout">
     <div className="quote-form-card">
       <div className="quote-form-heading"><span className="quote-step">01</span><div><h2>What would you like to protect?</h2><p>Select a coverage type to get started.</p></div></div>
-      <div className="quote-options" role="group" aria-label="Choose an insurance type">{services.map(service => <button key={service.slug} type="button" disabled={pending} className={`quote-option ${service.slug === selected ? "selected" : ""}`} aria-pressed={service.slug === selected} onClick={() => setChoice(service.slug)}><Icon name={service.icon} size={25} />{service.name}</button>)}</div>
+      <div className="quote-options" role="group" aria-label="Choose an insurance type">{services.map(service => <button key={service.slug} type="button" disabled={pending} className={`quote-option ${service.slug === selected ? "selected" : ""}`} aria-pressed={service.slug === selected} onClick={() => { setChoice(service.slug); onCoverageChange?.(service.slug); }}><Icon name={service.icon} size={25} />{service.name}</button>)}</div>
       <div className="quote-form-heading quote-details-heading"><span className="quote-step">02</span><div><h2>A little about you.</h2><p>Our team will use these details to follow up on your request.</p></div></div>
       {!formToken && <div className="quote-setup-notice" role="status"><strong>Online requests are being set up.</strong><span>You can preview the form below. To request a quote now, call <a href={agency.telephone}>{agency.phone}</a> or email <a href={`mailto:${agency.email}`}>{agency.email}</a>.</span></div>}
       <form onSubmit={submit} noValidate aria-label="Insurance quote request" aria-busy={pending}>
