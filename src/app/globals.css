@@ -33,3 +33,5 @@
 @media(max-width:1000px){.carrier-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.premium-finance{gap:25px;padding:28px}}
 @media(max-width:760px){.carrier-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.premium-finance{grid-template-columns:1fr;gap:24px}.premium-finance-support{padding:20px}.carrier-phones a{font-size:13px}}
 @media(max-width:480px){.carrier-grid{grid-template-columns:1fr;gap:14px}.carrier-card summary{padding:22px}.carrier-name{font-size:14px}.carrier-contact{padding:0 22px 22px}.carrier-logo,.carrier-logo img{height:64px}.carrier-phones{grid-template-columns:1fr 1fr;gap:15px}.carrier-phones a{font-size:13px}.carrier-contact .carrier-payment{font-size:14px}.premium-finance{padding:24px 18px}.premium-finance h3{font-size:29px}.premium-finance .button{font-size:12px;padding:14px}.premium-finance dl>div{flex-wrap:wrap;gap:4px}.premium-finance dd a{font-size:13px}.carrier-contact .carrier-website{font-size:12px}}
+
+.coverage-image-label{position:absolute;bottom:12px;left:12px;right:12px;width:fit-content;background:#082c40d9;color:white;padding:5px 9px;border-radius:6px;font-size:10px;line-height:1.5;z-index:1}
