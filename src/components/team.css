@@ -3,6 +3,14 @@
 .team-heading h1,.team-heading h2{font-size:clamp(34px,4vw,56px);line-height:1.14;letter-spacing:-1.8px;max-width:740px;margin-bottom:0}
 .team-heading>p{color:var(--muted);line-height:1.85;margin-bottom:3px;max-width:360px}
 .team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;max-width:980px}
+.team-category-nav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:42px}
+.team-category-nav a{border:1px solid #b7cfdd;border-radius:30px;padding:11px 18px;font-size:13px;font-weight:650;color:var(--navy);background:white}
+.team-category-nav a:hover{background:var(--navy);border-color:var(--navy);color:white}
+.team-category{scroll-margin-top:125px;border-top:1px solid #cbdce5;padding-top:30px}
+.team-category+.team-category{margin-top:60px}
+.team-category-heading{margin-bottom:25px}
+.team-category-heading h2,.team-category-heading h3{font-size:clamp(26px,3vw,34px);letter-spacing:-.8px;line-height:1.25;margin-bottom:10px}
+.team-category-heading p{color:var(--muted);font-size:15px;margin:0}
 .team-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;scroll-margin-top:115px}
 .team-portrait{background:#dce7ed;overflow:hidden;aspect-ratio:1.15;position:relative}
 .team-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
@@ -12,7 +20,7 @@
 .team-initials p{margin:0;font-size:12px;letter-spacing:.6px;color:#b5d2e2}
 .team-card-copy{padding:28px 30px 30px}
 .team-position{color:var(--blue);font-size:12px;font-weight:700;line-height:1.5;margin-bottom:12px}
-.team-card h3{font-size:28px;margin-bottom:14px}
+.team-card .team-member-name{font-family:var(--font-heading);font-size:28px;font-weight:700;letter-spacing:-.6px;line-height:1.15;margin:0 0 14px}
 .team-card-copy>p:not(.team-position){color:var(--muted);font-size:15px;line-height:1.75;min-height:53px}
 .team-bio-link{display:flex;justify-content:space-between;align-items:center;gap:15px;border-top:1px solid var(--line);padding-top:20px;margin-top:24px;font-size:14px;font-weight:700;color:var(--blue)}
 .team-bio-link:hover{text-decoration:underline;text-underline-offset:5px}
