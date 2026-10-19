@@ -7,6 +7,23 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "texas-auto-insurance-transparency-tool-october-2026",
+    title: "New Texas auto insurance data: a starting point after a policy notice",
+    description: "TDI expanded its transparency tool on October 15. Learn how Round Rock drivers can use the update to prepare questions after an insurance notice.",
+    category: "Consumer news", published: "2026-10-19", updated: "2026-10-19", sourceDate: "2026-10-15",
+    sourceTitle: "TDI adds auto data to transparency tool showing why policies are declined, canceled, or not renewed",
+    sourceUrl: "https://tdi.texas.gov/news/2026/tdi10152026.html",
+    image: "/images/coverage-auto.webp",
+    imageAlt: "AI-generated illustration of a navy sedan parked at a Texas Hill Country overlook",
+    coverage: "auto",
+    sections: [
+      { heading: "What changed on October 15", text: "The Texas Department of Insurance announced that its transparency webpage now includes personal auto insurance. Texans can explore reported reasons for declined applications, cancellations, and nonrenewals in their area, alongside counts of those actions and insured vehicles. October 15 is the announcement date for this data expansion, not a new coverage effective date." },
+      { heading: "Use the update as context", text: "Area-wide reporting can help frame questions, but it does not explain every individual decision. Keep your own insurer's written notice: that is the document to discuss when asking why your application or policy was affected. The tool does not promise acceptance, a lower premium, or reinstatement." },
+      { heading: "Prepare for a Round Rock coverage conversation", text: "Gather the notice, your current declarations page, and your vehicle and driver details. Note any dates in the notice. Ask what the stated reason means for your situation and what options may be available. Centex can help you organize a conversation about auto coverage; eligibility and terms depend on the insurer." },
+      { heading: "Read the official announcement", text: "The TDI source linked below explains the expansion and links to the reporting tool. For insurance questions, TDI lists its Help Line at 800-252-3439. Treat the dashboard as background information alongside your own policy documents." },
+    ],
+  },
+  {
     "slug": "life-insurance-planning-round-rock-families",
     "title": "Life insurance planning: a starting point for Round Rock families",
     "description": "An evergreen guide to term and permanent life insurance, family priorities, and questions to bring to a Centex coverage conversation.",
