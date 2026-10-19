@@ -16,7 +16,7 @@ export function buildQuoteEmail(quote: QuoteRequest, reference: string, logo = "
   ];
   const htmlRows = rows.map(([label, value]) => `<tr><th scope="row" align="left" valign="top" style="width:120px;padding:13px 18px 13px 0;font-family:Arial,sans-serif;font-size:13px;line-height:22px;font-weight:600;color:#253b4b;border-bottom:1px solid #edf1f4;">${label}</th><td valign="top" style="padding:13px 0;font-family:Arial,sans-serif;font-size:14px;line-height:24px;color:#61717c;overflow-wrap:anywhere;word-break:break-word;border-bottom:1px solid #edf1f4;">${escapeHtml(value).replace(/\n/g, "<br />")}</td></tr>`).join("");
   const html = `<!doctype html>
-<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>New Centex quote request</title></head>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>New Centex Insurance Solutions quote request</title></head>
 <body style="margin:0;padding:0;background:#f2f6f9;color:#253b4b;">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">New ${escapeHtml(coverage.toLowerCase())} request from ${escapeHtml(quote.firstName)} ${escapeHtml(quote.lastName)}.</div>
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#f2f6f9;"><tr><td align="center" style="padding:28px 12px;">

@@ -75,7 +75,7 @@ export const carriers: Carrier[] = [
     "payment": {
       "url": "https://www.myforemostaccount.com/",
       "label": "Pay your bill",
-      "note": "Contact Centex first for policy changes. This service number can help if you cannot reach your agent."
+      "note": "Contact Centex Insurance Solutions first for policy changes. This service number can help if you cannot reach your agent."
     },
     "sources": [
       "https://www.foremost.com/contact/",
@@ -289,7 +289,7 @@ export const carriers: Carrier[] = [
     "payment": {
       "url": "https://www.safeco.com/customer-support",
       "label": "Billing & account access",
-      "note": "Safeco's public support page now directs customers to Liberty Mutual. Follow the instructions for your policy or contact Centex."
+      "note": "Safeco's public support page now directs customers to Liberty Mutual. Follow the instructions for your policy or contact Centex Insurance Solutions."
     },
     "sources": [
       "https://www.safeco.com/customer-support"
@@ -413,7 +413,7 @@ export const carriers: Carrier[] = [
     "payment": {
       "url": "https://myaccount.usli.com/",
       "label": "Pay your bill",
-      "note": "For policies billed directly by USLI. This number handles billing, registration and payment assistance; contact Centex for other policy questions."
+      "note": "For policies billed directly by USLI. This number handles billing, registration and payment assistance; contact Centex Insurance Solutions for other policy questions."
     },
     "sources": [
       "https://www.usli.com/support",

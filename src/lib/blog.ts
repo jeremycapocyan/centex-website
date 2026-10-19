@@ -19,14 +19,14 @@ export const posts: BlogPost[] = [
     sections: [
       { heading: "What changed on October 15", text: "The Texas Department of Insurance announced that its transparency webpage now includes personal auto insurance. Texans can explore reported reasons for declined applications, cancellations, and nonrenewals in their area, alongside counts of those actions and insured vehicles. October 15 is the announcement date for this data expansion, not a new coverage effective date." },
       { heading: "Use the update as context", text: "Area-wide reporting can help frame questions, but it does not explain every individual decision. Keep your own insurer's written notice: that is the document to discuss when asking why your application or policy was affected. The tool does not promise acceptance, a lower premium, or reinstatement." },
-      { heading: "Prepare for a Round Rock coverage conversation", text: "Gather the notice, your current declarations page, and your vehicle and driver details. Note any dates in the notice. Ask what the stated reason means for your situation and what options may be available. Centex can help you organize a conversation about auto coverage; eligibility and terms depend on the insurer." },
+      { heading: "Prepare for a Round Rock coverage conversation", text: "Gather the notice, your current declarations page, and your vehicle and driver details. Note any dates in the notice. Ask what the stated reason means for your situation and what options may be available. Centex Insurance Solutions can help you organize a conversation about auto coverage; eligibility and terms depend on the insurer." },
       { heading: "Read the official announcement", text: "The TDI source linked below explains the expansion and links to the reporting tool. For insurance questions, TDI lists its Help Line at 800-252-3439. Treat the dashboard as background information alongside your own policy documents." },
     ],
   },
   {
     "slug": "life-insurance-planning-round-rock-families",
     "title": "Life insurance planning: a starting point for Round Rock families",
-    "description": "An evergreen guide to term and permanent life insurance, family priorities, and questions to bring to a Centex coverage conversation.",
+    "description": "An evergreen guide to term and permanent life insurance, family priorities, and questions to bring to a Centex Insurance Solutions coverage conversation.",
     "category": "Evergreen guide",
     "published": "2026-10-13",
     "updated": "2026-10-13",
@@ -51,7 +51,7 @@ export const posts: BlogPost[] = [
       },
       {
         "heading": "Make the next step personal",
-        "text": "A growing family, a home purchase, or support for an aging parent can prompt a fresh conversation. Centex can help you explore life insurance options and the questions that matter to your household. The appropriate amount and type of coverage depend on your circumstances; this guide does not establish eligibility or guarantee a benefit."
+        "text": "A growing family, a home purchase, or support for an aging parent can prompt a fresh conversation. Centex Insurance Solutions can help you explore life insurance options and the questions that matter to your household. The appropriate amount and type of coverage depend on your circumstances; this guide does not establish eligibility or guarantee a benefit."
       }
     ]
   },
@@ -66,7 +66,7 @@ export const posts: BlogPost[] = [
     sections: [
       { heading: "What the latest report says", text: "On October 8, the Texas Department of Insurance reported that homeowners rate changes filed over the previous 90 days averaged a 4.3% decrease. Most homeowners insurers filing changes since July 1 proposed reductions, affecting about 700,000 policyholders. Auto rate decreases filed since July 1 affected 4.4 million policyholders." },
       { heading: "A market trend is not your renewal price", text: "These figures describe rate filings, not a guaranteed discount on every policy. Your renewal still deserves an individual review. A lower premium is most useful when the coverage continues to fit your home, vehicles, and budget." },
-      { heading: "A practical next step for Central Texas households", text: "Before comparing quotes, put your current declarations page and renewal offer side by side. Ask an agent to explain differences in limits, deductibles, and coverage. Centex can help Round Rock and Texas customers organize that conversation without assuming the lowest price is the best fit." },
+      { heading: "A practical next step for Central Texas households", text: "Before comparing quotes, put your current declarations page and renewal offer side by side. Ask an agent to explain differences in limits, deductibles, and coverage. Centex Insurance Solutions can help Round Rock and Texas customers organize that conversation without assuming the lowest price is the best fit." },
     ],
   },
   {
@@ -80,7 +80,7 @@ export const posts: BlogPost[] = [
     sections: [
       { heading: "Age and condition are different", text: "In its September 29 update, the Texas Department of Insurance clarified that insurers cannot decline or nonrenew a home policy solely because the house or roof is older. Physical condition can still factor into underwriting decisions, including the condition of roofing, wiring, plumbing, and other components." },
       { heading: "What this does—and does not—mean", text: "The distinction matters for homeowners with older properties. It does not mean every home must qualify for every policy, or that roof damage is automatically covered. Read the insurer’s explanation and ask how the property’s condition affected the decision." },
-      { heading: "Prepare for your next conversation", text: "Gather any inspection reports, repair receipts, and correspondence from your insurer. Ask which specific concerns need attention and how to document completed repairs. A Centex agent can help you discuss available home insurance options. For questions about the state’s guidance, contact TDI at 800-252-3439." },
+      { heading: "Prepare for your next conversation", text: "Gather any inspection reports, repair receipts, and correspondence from your insurer. Ask which specific concerns need attention and how to document completed repairs. A Centex Insurance Solutions agent can help you discuss available home insurance options. For questions about the state’s guidance, contact TDI at 800-252-3439." },
     ],
   },
   {
@@ -94,7 +94,7 @@ export const posts: BlogPost[] = [
     sections: [
       { heading: "What TDI announced", text: "On September 2, the Texas Department of Insurance reminded insurers that home and auto rates must be based on insurance risk. The agency identified charging loyal customers more because they are less likely to shop around as an example of prohibited price optimization." },
       { heading: "A higher renewal needs context", text: "The guidance does not establish that every premium increase is improper. TDI explains that insurers use multiple risk factors, such as location and claims history. Ask your insurer or agent to explain the changes affecting your renewal before drawing conclusions." },
-      { heading: "Make your comparison useful", text: "Keep a record of your current premium, renewal price, coverage limits, and deductibles. Request comparable options and ask about any differences before switching. Centex can help you review your choices. If you have a concern about an insurer’s pricing practices, TDI’s consumer help line is 800-252-3439." },
+      { heading: "Make your comparison useful", text: "Keep a record of your current premium, renewal price, coverage limits, and deductibles. Request comparable options and ask about any differences before switching. Centex Insurance Solutions can help you review your choices. If you have a concern about an insurer’s pricing practices, TDI’s consumer help line is 800-252-3439." },
     ],
   },
 ];

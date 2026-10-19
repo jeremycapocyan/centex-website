@@ -10,7 +10,7 @@ import { QuoteExperience } from "@/components/quote-experience";
 import "./quote-form.css";
 import "./consumer-quoting.css";
 
-export const metadata: Metadata = { title: "Get a free insurance quote", description: "Get instant auto and home quotes through the Centex EZLynx quoting tool, or contact our Texas team for other insurance options." };
+export const metadata: Metadata = { title: "Get a free insurance quote", description: "Get instant auto and home quotes through the Centex Insurance Solutions Portal, or contact our Texas team for other insurance options." };
 
 export default async function QuotePage({ searchParams }: { searchParams: Promise<{ coverage?: string }> }) {
   await connection();

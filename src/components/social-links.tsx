@@ -7,5 +7,5 @@ const socials = [
 ];
 
 export function SocialLinks() {
-  return <nav className="footer-socials" aria-label="Centex on social media">{socials.map(social => <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={`${social.name} — opens in a new tab`}>{social.icon}<span>{social.name}</span></a>)}</nav>;
+  return <nav className="footer-socials" aria-label="Centex Insurance Solutions on social media">{socials.map(social => <a key={social.name} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={`${social.name} — opens in a new tab`}>{social.icon}<span>{social.name}</span></a>)}</nav>;
 }

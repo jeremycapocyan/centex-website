@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     // The Host header retains the browser-facing host and port.
     sameOrigin = url.origin === origin && url.host === host && (url.protocol === "https:" || (local && url.protocol === "http:"));
   } catch { /* A missing or malformed Origin is not a website submission. */ }
-  if (!sameOrigin) return reply({ error: "Please submit your request from the Centex website." }, 403);
+  if (!sameOrigin) return reply({ error: "Please submit your request from the Centex Insurance Solutions website." }, 403);
   if (!request.headers.get("content-type")?.toLowerCase().startsWith("application/json")) return reply({ error: "Unsupported request format." }, 415);
   const config = getMailConfig();
   if (!config) return reply({ error: "Online requests are temporarily unavailable. Please call (512) 770-6400 or email info@centexis.com." }, 503);

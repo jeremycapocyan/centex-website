@@ -10,7 +10,7 @@ import { siteUrl } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Centex Insurance Solutions | Local People. Texas-Wide Protection.", template: "%s | Centex Insurance Solutions" },
-  description: "Independent insurance advice from Round Rock, Texas. Explore auto, home, business, renters, life, commercial truck, and umbrella insurance with Centex Insurance Solutions.",
+  description: "Independent insurance advice from Round Rock, Texas. Explore auto, home, business, renters, life, commercial auto/vehicle, and umbrella insurance with Centex Insurance Solutions.",
   applicationName: "Centex Insurance Solutions",
 };
 
