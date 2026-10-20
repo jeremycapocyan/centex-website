@@ -10,11 +10,19 @@ import { carriers } from "@/lib/carriers";
 
 import { BlogCards } from "@/components/blog-cards";
 import { getPosts } from "@/lib/blog";
+import { pageMetadata, agencyStructuredData, serializeJsonLd } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Independent Insurance Agency in Round Rock, TX",
+  description: "Explore home, auto, business, and life insurance with Centex Insurance Solutions, an independent agency in Round Rock serving customers across Texas.",
+  path: "/",
+});
 
 const featuredCarriers = ["progressive", "travelers", "safeco", "liberty-mutual", "foremost", "geico"];
 
 export default function Home() {
   return <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(agencyStructuredData) }} />
     <section className="hero">
       <div className="container hero-grid">
         <div className="hero-copy">

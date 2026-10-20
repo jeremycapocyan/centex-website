@@ -4,11 +4,11 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { JournalExplorer } from "@/components/journal-explorer";
 import { getPosts, readingMinutes } from "@/lib/blog";
-import { absoluteUrl } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
 const title = "Texas Insurance News & Insights";
 const description = "Source-linked insurance news and practical coverage insights for Round Rock and Texas homeowners, drivers, and businesses.";
-export const metadata: Metadata = { title, description, alternates: { canonical: absoluteUrl("/blog/") }, openGraph: { title, description, url: absoluteUrl("/blog/"), type: "website", images: [{ url: absoluteUrl(getPosts()[0].image), width: 1440, height: 960 }] } };
+export const metadata: Metadata = pageMetadata({ title, description, path: "/blog/", image: { src: getPosts()[0].image, alt: getPosts()[0].imageAlt } });
 
 export default function Blog() {
   const posts = getPosts();

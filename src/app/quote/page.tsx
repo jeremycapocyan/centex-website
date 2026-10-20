@@ -9,8 +9,9 @@ import { createFormToken } from "@/lib/quote-security";
 import { QuoteExperience } from "@/components/quote-experience";
 import "./quote-form.css";
 import "./consumer-quoting.css";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Get a free insurance quote", description: "Get instant auto and home quotes through the Centex Insurance Solutions Portal, or contact our Texas team for other insurance options." };
+export const metadata: Metadata = pageMetadata({ title: "Get a free insurance quote", description: "Get instant auto and home quotes through the Centex Insurance Solutions Portal, or contact our Texas team for other insurance options.", path: "/quote/" });
 
 export default async function QuotePage({ searchParams }: { searchParams: Promise<{ coverage?: string }> }) {
   await connection();

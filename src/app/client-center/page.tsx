@@ -3,8 +3,9 @@ import Link from "next/link";
 import { agency } from "@/lib/content";
 import { CarrierDirectory } from "@/components/carrier-directory";
 import { Icon } from "@/components/icon";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Client center", description: "Access policy documents, insurance ID cards, carrier contacts, payment portals, IPFS premium financing, and help from your Centex Insurance Solutions team." };
+export const metadata: Metadata = pageMetadata({ title: "Client center", description: "Access policy documents, insurance ID cards, carrier contacts, payment portals, IPFS premium financing, and help from your Centex Insurance Solutions team.", path: "/client-center/" });
 
 export default function ClientCenter() {
   const options = [{ icon: "document", name: "Your policies & documents", description: "Visit the Portal to view available policy information, print ID cards, and access documents.", label: "Open Portal", url: agency.client }, { icon: "shield", name: "Payments & carrier support", description: "Find customer service, billing and claims numbers, plus carrier payment links and your Centex Insurance Solutions IPFS portal.", label: "Find payment & support", url: "#carrier-support" }, { icon: "support", name: "A person in your corner", description: "Have a policy question or a change to discuss? Call your Centex Insurance Solutions team and select option 2 for general inquiries.", label: agency.phone, url: agency.telephone }];

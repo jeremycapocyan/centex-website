@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   title: { default: "Centex Insurance Solutions | Local People. Texas-Wide Protection.", template: "%s | Centex Insurance Solutions" },
   description: "Independent insurance advice from Round Rock, Texas. Explore auto, home, business, renters, life, commercial auto/vehicle, and umbrella insurance with Centex Insurance Solutions.",
   applicationName: "Centex Insurance Solutions",
+  verification: process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : undefined,
+  robots: process.env.VERCEL_ENV === "preview" ? { index: false, follow: false } : undefined,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
