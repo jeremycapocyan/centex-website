@@ -52,10 +52,12 @@ export const team: TeamMember[] = [
     position: "Commercial Lines Assistant",
     category: "policy-support",
     initials: "GS",
-    introduction: "Get to know our Commercial Lines Assistant.",
+    image: "/images/giro-sollano.webp",
+    imageDimensions: { width: 896, height: 1120 },
+    introduction: "Meet Giro – Thoughtful Support for Your Business Insurance.",
     bio: [
-      "Giro Sollano is the Commercial Lines Assistant at Centex Insurance Solutions.",
-      "Full biography coming soon.",
+      "Giro brings a distinctive combination of technical expertise, operational experience, and client-focused service to Centex Insurance Solutions. With a degree in Civil Engineering and six years of experience in the Business Process Outsourcing (BPO) industry, he applies his analytical thinking, problem-solving abilities, and attention to detail to help business owners navigate the complexities of commercial insurance. Giro focuses on simplifying insurance processes, maintaining accurate and up-to-date coverage information, and proactively coordinating policy changes, endorsements, certificates, and renewals. His commitment to responsiveness, efficiency, and clear communication helps clients make informed insurance decisions while minimizing administrative burdens, allowing them to focus on running and growing their businesses.",
+      "Outside the office, Giro has been an esports enthusiast since 2009 and an active badminton player since 2013. He also enjoys nature exploration, freediving, motorcycle riding, and playing fingerstyle guitar. These interests reflect his discipline, strategic mindset, adaptability, and commitment to continuous personal and professional growth.",
     ],
   },
   {
@@ -64,6 +66,8 @@ export const team: TeamMember[] = [
     position: "Personal Lines Assistant",
     category: "policy-support",
     initials: "AM",
+    image: "/images/aaron-paul-manabat.webp",
+    imageDimensions: { width: 896, height: 1344 },
     introduction: "Get to know our Personal Lines Assistant.",
     bio: [
       "Aaron Paul Manabat is the Personal Lines Assistant at Centex Insurance Solutions.",
@@ -76,10 +80,13 @@ export const team: TeamMember[] = [
     position: "Quality Assurance & Retention Specialist",
     category: "client-experience-retention",
     initials: "JA",
-    introduction: "Meet the people behind your insurance experience.",
+    image: "/images/jeremy-angelo-alonzo.webp",
+    imageDimensions: { width: 887, height: 887 },
+    introduction: "Connecting clients, strengthening relationships, and ensuring every detail behind the scenes contributes to a better insurance experience.",
     bio: [
-      "Jeremy Angelo Alonzo is the Quality Assurance & Retention Specialist at Centex Insurance Solutions.",
-      "Full biography coming soon.",
+      "Jeremy serves as the Quality Assurance and Retention Specialist at Centex Insurance Solutions. He holds a Bachelor's Degree in Business Administration, majoring in Marketing Management, and is a Certified Digital Marketing Professional.",
+      "Jeremy focuses on building strong client relationships through proactive communication, ensuring clients stay informed about policy updates, renewals, and important insurance matters. Behind the scenes, he oversees administrative operations, maintains accurate records, and helps improve internal processes to ensure efficient and reliable service.",
+      "Outside of work, Jeremy has a strong passion for sports and is also a Pickleball Coach. He enjoys sharing his knowledge, helping players develop their skills, and promoting teamwork and sportsmanship. His involvement in sports reflects his dedication to discipline, continuous learning, and personal growth—values he also brings to his professional career.",
     ],
   },
 ];
