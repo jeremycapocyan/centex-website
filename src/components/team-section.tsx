@@ -7,7 +7,7 @@ import "./team.css";
 export function TeamPortrait({ member, priority = false }: { member: TeamMember; priority?: boolean }) {
   return <div className={`team-portrait${member.image ? "" : " team-portrait-pending"}`}>
     {member.image
-      ? <Image src={member.image} alt={`${member.name}, ${member.position} at Centex Insurance Solutions`} width={435} height={636} preload={priority} sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 400px" />
+      ? <Image src={member.image} alt={`${member.name}, ${member.position} at Centex Insurance Solutions`} width={member.imageDimensions?.width ?? 435} height={member.imageDimensions?.height ?? 636} preload={priority} sizes="(max-width: 600px) 90vw, (max-width: 900px) 45vw, 400px" />
       : <div className="team-initials"><span aria-hidden="true">{member.initials}</span><p>Headshot coming soon</p></div>}
   </div>;
 }
