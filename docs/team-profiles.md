@@ -4,7 +4,9 @@ Edit `src/lib/team.ts` to add or update an approved employee profile. Each entry
 
 The category order and labels live in `teamCategories`: Agents & Producers (`agents-producers`), Policy Support Team (`policy-support`), and Client Experience & Retention (`client-experience-retention`). Keep the employee's official title separate from their category. Both the homepage and team directory group profiles by these categories.
 
-Profiles automatically appear in the homepage team section, `/team/`, individual `/team/[slug]/` bio pages, and the sitemap. Use verified facts and approved biographies only. All five team members now have user-supplied headshots. Aaron Paul Manabat's full biography is still pending; keep his confirmed role and the biography-coming-soon notice until approved copy is supplied.
+Profiles automatically appear in the homepage team section, `/team/`, individual `/team/[slug]/` bio pages, and the sitemap. Use verified facts and approved biographies only. All five team members now have user-supplied headshots and published biographies.
+
+Aaron Paul Manabat's approved three-paragraph biography was added on October 27, 2026. The repeated "has and has" was corrected to "has"; the rest of the supplied wording was preserved. His title, introduction, headshot, category, and profile URL remain unchanged.
 
 Reginald Ray's approved biography and user-supplied headshot were added on October 24, 2026. The original `image (4).png` was resized proportionally and encoded as `public/images/reginald-ray.webp` (896 × 1120), without retouching his appearance. His formal title remains Personal Lines Producer; his introduction uses his preferred nickname, Reggie. Set optional `imageDimensions` to a portrait's actual pixel dimensions when they differ from the existing 435 × 636 default.
 

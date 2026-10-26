@@ -70,8 +70,9 @@ export const team: TeamMember[] = [
     imageDimensions: { width: 896, height: 1344 },
     introduction: "Get to know our Personal Lines Assistant.",
     bio: [
-      "Aaron Paul Manabat is the Personal Lines Assistant at Centex Insurance Solutions.",
-      "Full biography coming soon.",
+      "Aaron brings a diverse background in customer service, administration, and account management to Centex Insurance Solutions. A graduate of AMA Computer College with a Bachelor of Science in Information Technology, he combines his educational background with years of professional experience across customer service and operational roles. Throughout his career, Aaron has developed strong communication skills, attention to detail, and a practical approach to problem-solving.",
+      "As a Personal Lines Assistant, Aaron supports the team by preparing insurance quotations, maintaining accurate client information, responding to inquiries, and assisting with remarketing efforts to identify competitive insurance options. He believes that excellent service begins with understanding each client's needs, communicating clearly, and handling every detail with care. His commitment to responsiveness, accuracy, and dependable support helps simplify the insurance process, allowing clients to make informed decisions about protecting what matters most to them.",
+      "Outside the office, Aaron has a passion for music and has participated in singing competitions, reflecting his love for singing and performing. He also enjoys traveling when the opportunity arises and most of all, spending quality time with his family. Whether performing, exploring new places, or simply enjoying time with loved ones, Aaron values experiences that create meaningful memories and bring balance to everyday life.",
     ],
   },
   {
