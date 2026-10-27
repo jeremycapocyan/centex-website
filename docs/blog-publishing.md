@@ -9,3 +9,9 @@ Weekly cadence: Mondays at 9:00 a.m. Asia/Manila, via a Codex thread automation.
 Before publishing: run `npm test` and `npm run build`; verify the new route, canonical, social image, structured data, sitemap, links, and mobile layout. Do not overwrite unrelated work or force-push. Keep mail credentials and quote delivery configuration untouched.
 
 SEO uses the current production host. When the new site moves to the Centex custom domain, set `SITE_URL` to its final HTTPS origin in Vercel and redeploy. Coordinate redirects from the former host. Verify domain ownership in Google Search Console and submit `/sitemap.xml`; this requires the site's owner and is not completed by adding metadata. Search ranking and indexing are not guaranteed.
+
+## October 27, 2026 article image
+
+`public/images/insurance-fraud-awareness.webp` was created with the built-in image generation tool and optimized to 1440 x 960 WebP. It is a symbolic still life, labeled as AI-generated illustration in the article, not a photograph of a real event.
+
+Prompt: Create a high-quality editorial illustration with realistic photographic textures for an insurance agency journal article about preventing insurance fraud. Landscape 3:2 composition. On a light oak desk beside a softly sunlit window: a magnifying glass resting over blank insurance paperwork, a navy blue folder, a small ceramic white house and a blue toy car. Thoughtful clean arrangement, warm neutral tones with navy and sky blue accents, realistic scale, subtle depth of field. No people, no readable text, no logos, no seals, no police imagery, no watermark. This is a symbolic still life, not a depiction of an actual news event. Keep all key objects in the central safe crop area.

@@ -7,6 +7,38 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    "slug": "texas-insurance-fraud-task-force-consumer-update-2026",
+    "title": "Texas launches an insurance fraud task force: what to know in Round Rock",
+    "description": "TDI announced a new fraud task force on October 21. Learn what it will do, what the announcement does not change, and where Texans can report concerns.",
+    "category": "Consumer news",
+    "published": "2026-10-27",
+    "updated": "2026-10-27",
+    "sourceDate": "2026-10-21",
+    "sourceTitle": "TDI launches Insurance Fraud Task Force to clamp down on fraud and protect Texas consumers",
+    "sourceUrl": "https://www.tdi.texas.gov/news/2026/tdi10212026.html",
+    "image": "/images/insurance-fraud-awareness.webp",
+    "imageAlt": "AI-generated illustrative still life of a magnifying glass on paperwork beside a miniature house and blue car",
+    "coverage": "home",
+    "sections": [
+      {
+        "heading": "A new statewide effort",
+        "text": "On October 21, 2026, the Texas Department of Insurance announced a new insurance fraud task force. Its planned work includes coordinating investigations, exchanging fraud intelligence, preparing consumer guidance after disasters, and expanding public education."
+      },
+      {
+        "heading": "What the announcement means for your policy",
+        "text": "October 21 is the announcement date, not a new policy effective date. The release describes an effort to address fraud and its costs; it does not promise a premium reduction, approve an individual claim, or change your coverage. Round Rock customers should continue reviewing their own policy documents and notices."
+      },
+      {
+        "heading": "A practical step for Round Rock households",
+        "text": "Keep your policy, payment records, and correspondence organized so you can describe a concern clearly. For questions about a home insurance document or a message you received, contact your insurer or Centex Insurance Solutions through a contact method you already trust. A question or billing discrepancy alone does not establish fraud."
+      },
+      {
+        "heading": "Where to report suspected fraud",
+        "text": "TDI directs Texans to its online reporting service, linked from the official announcement below, or its Help Line at 800-252-3439. The release describes statewide work, not a specific Round Rock incident."
+      }
+    ]
+  },
+  {
     slug: "texas-auto-insurance-transparency-tool-october-2026",
     title: "New Texas auto insurance data: a starting point after a policy notice",
     description: "TDI expanded its transparency tool on October 15. Learn how Round Rock drivers can use the update to prepare questions after an insurance notice.",
