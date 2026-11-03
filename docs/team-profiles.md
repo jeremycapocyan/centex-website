@@ -17,7 +17,9 @@ The following user-supplied PNGs were proportionally resized where needed and en
 | Team member | Supplied file | Local asset | Dimensions |
 | --- | --- | --- | --- |
 | Giro Sollano | `Professional Blue Polo Headshot (1).png` | `public/images/giro-sollano.webp` | 896 × 1120 |
-| Aaron Paul Manabat | `Smiling Corporate Insurance Professional.png` | `public/images/aaron-paul-manabat.webp` | 896 × 1344 |
+| AP MANABAT | `codex-clipboard-576a0f9f-30ef-422f-ae17-0f431b3e5610.png` | `public/images/ap-manabat.webp` | 896 × 1120 |
 | Jeremy Angelo Alonzo | `download.png` | `public/images/jeremy-angelo-alonzo.webp` | 887 × 887 |
 
 The commercial auto/vehicle offering retains the existing `commercial-truck` URL and form identifier so saved links continue working; its displayed name and coverage copy have been updated.
+
+On November 4, 2026, Aaron Paul Manabat’s display name was updated to AP MANABAT and his headshot replaced with the newly supplied portrait, resized proportionally without retouching. His biography retains Aaron and his URL remains `/team/aaron-paul-manabat/`. Booker Gilbert’s biography was replaced with the four approved paragraphs, preserving their wording and paragraph breaks. His formal title remains Principal Agent.

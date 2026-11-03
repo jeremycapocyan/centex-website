@@ -26,8 +26,10 @@ export const team: TeamMember[] = [
     image: "/images/booker-gilbert.webp",
     introduction: "Your story comes first. Let's protect what's next.",
     bio: [
-      "Booker Gilbert is the Principal Agent of Centex Insurance Solutions, an independent insurance agency in Round Rock serving customers across Texas.",
-      "Your home, your business, and the people you love are a good place to begin an insurance conversation. Connect with Booker and the Centex Insurance Solutions team to discuss your priorities and explore the coverage options available to you.",
+      "Booker is the Principal Agent and Owner of Centex Insurance Solutions in Round Rock. An Austin native, he brings a personal, relationship-focused approach to insurance—taking time to understand each client, explain their options, and help them protect their families and businesses.",
+      "His commitment to service extends beyond the agency. For more than 20 years, Booker has supported the Austin and Round Rock communities through volunteering, mentoring, coaching, and nonprofit board service. His involvement in his church and community reflects the same values he brings to his work: caring for others, building trust, and being someone people can count on.",
+      "After college, Booker spent nearly 15 years in high paced technology & global operations sector, before pivoting into insurance to serve people more directly. As an independent agent, he helps clients explore options from multiple carriers with guidance grounded in their needs.",
+      "Booker and his wife, Natalie, call Round Rock home, where they are raising their two younger children. They enjoy coaching in local youth sports, traveling as a family, and attending their eldest son’s college football games out of state.",
     ],
   },
   {
@@ -62,12 +64,12 @@ export const team: TeamMember[] = [
   },
   {
     slug: "aaron-paul-manabat",
-    name: "Aaron Paul Manabat",
+    name: "AP MANABAT",
     position: "Personal Lines Assistant",
     category: "policy-support",
-    initials: "AM",
-    image: "/images/aaron-paul-manabat.webp",
-    imageDimensions: { width: 896, height: 1344 },
+    initials: "AP",
+    image: "/images/ap-manabat.webp",
+    imageDimensions: { width: 896, height: 1120 },
     introduction: "Get to know our Personal Lines Assistant.",
     bio: [
       "Aaron brings a diverse background in customer service, administration, and account management to Centex Insurance Solutions. A graduate of AMA Computer College with a Bachelor of Science in Information Technology, he combines his educational background with years of professional experience across customer service and operational roles. Throughout his career, Aaron has developed strong communication skills, attention to detail, and a practical approach to problem-solving.",
