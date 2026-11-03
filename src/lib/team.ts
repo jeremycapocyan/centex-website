@@ -64,7 +64,7 @@ export const team: TeamMember[] = [
   },
   {
     slug: "aaron-paul-manabat",
-    name: "AP MANABAT",
+    name: "AP Manabat",
     position: "Personal Lines Assistant",
     category: "policy-support",
     initials: "AP",
