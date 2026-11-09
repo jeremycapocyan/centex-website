@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/header";
+import { GuidedAssistant } from "@/components/guided-assistant";
+import "@/components/guided-assistant.css";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 import "./blog.css";
@@ -17,5 +19,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return <html lang="en"><body><Header /><main id="main">{children}</main><Footer /><SiteMotion /></body></html>;
+  return <html lang="en"><body><Header /><main id="main">{children}</main><Footer /><SiteMotion /><GuidedAssistant /></body></html>;
 }
