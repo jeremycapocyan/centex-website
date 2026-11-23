@@ -1,5 +1,5 @@
 export const teamCategories = [
-  { id: "agents-producers", name: "Agents & Producers", description: "Meet our principal agent and personal lines producer." },
+  { id: "agents-producers", name: "Agents & Producers", description: "Meet our principal agent and property and casualty producer." },
   { id: "policy-support", name: "Policy Support Team", description: "Meet our commercial and personal lines assistants." },
   { id: "client-experience-retention", name: "Client Experience & Retention", description: "Meet our quality assurance and retention specialist." },
 ] as const;
@@ -35,7 +35,7 @@ export const team: TeamMember[] = [
   {
     slug: "reginald-ray",
     name: "Reginald Ray",
-    position: "Personal Lines Producer",
+    position: "Property and Casualty Producer",
     category: "agents-producers",
     initials: "RR",
     image: "/images/reginald-ray.webp",

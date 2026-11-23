@@ -2,6 +2,7 @@ export const agency = {
   name: "Centex Insurance Solutions",
   phone: "(512) 770-6400",
   telephone: "tel:+15127706400",
+  sms: "sms:+15127706400",
   email: "info@centexis.com",
   address: "551 S I-35 Frontage Rd #300",
   city: "Round Rock, TX 78664",

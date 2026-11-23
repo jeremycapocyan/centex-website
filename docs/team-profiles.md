@@ -8,7 +8,7 @@ Profiles automatically appear in the homepage team section, `/team/`, individual
 
 Aaron Paul Manabat's approved three-paragraph biography was added on October 27, 2026. The repeated "has and has" was corrected to "has"; the rest of the supplied wording was preserved. His title, introduction, headshot, category, and profile URL remain unchanged.
 
-Reginald Ray's approved biography and user-supplied headshot were added on October 24, 2026. The original `image (4).png` was resized proportionally and encoded as `public/images/reginald-ray.webp` (896 × 1120), without retouching his appearance. His formal title remains Personal Lines Producer; his introduction uses his preferred nickname, Reggie. Set optional `imageDimensions` to a portrait's actual pixel dimensions when they differ from the existing 435 × 636 default.
+Reginald Ray's approved biography and user-supplied headshot were added on October 24, 2026. The original `image (4).png` was resized proportionally and encoded as `public/images/reginald-ray.webp` (896 × 1120), without retouching his appearance. His title is Property and Casualty Producer; his introduction uses his preferred nickname, Reggie. Set optional `imageDimensions` to a portrait's actual pixel dimensions when they differ from the existing 435 × 636 default.
 
 Giro Sollano's and Jeremy Angelo Alonzo's approved biographies and all three remaining headshots were added on October 24, 2026. Only the opening typo "iro" was corrected to "Giro" in Giro's supplied biography. Jeremy's supplied professional tagline is his introduction. Formal names, roles, categories, and profile URLs remain unchanged.
 

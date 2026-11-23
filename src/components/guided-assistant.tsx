@@ -37,7 +37,7 @@ export function GuidedAssistant() {
     });
   }
   function action(href: string, label: string, external = false) {
-    return external || href.startsWith("/quote/") || href.startsWith("tel:") || href.startsWith("mailto:")
+    return external || href.startsWith("/quote/") || href.startsWith("tel:") || href.startsWith("sms:") || href.startsWith("mailto:")
       ? <a className="assistant-action" href={href} target={external ? "_blank" : undefined} rel={external ? "noopener noreferrer" : undefined} onClick={close}>{label}<ArrowUpRight size={18} aria-hidden="true" />{external && <span className="assistant-sr"> (opens in a new tab)</span>}</a>
       : <Link className="assistant-action" href={href} onClick={close}>{label}<ChevronRight size={18} aria-hidden="true" /></Link>;
   }
@@ -60,7 +60,7 @@ export function GuidedAssistant() {
           {topic === "payment" && action("/client-center/#carrier-support", "Find payment & carrier support")}
           {topic === "portal" && action(agency.client, "Open Portal", true)}
           {topic === "coverage" && services.map(service => <Link className="assistant-action" key={service.slug} href={`/insurance/${service.slug}/`} onClick={close}>{service.name}<ChevronRight size={18} aria-hidden="true" /></Link>)}
-          {topic === "contact" && <>{action(agency.telephone, `Call ${agency.phone}`)}{action(`mailto:${agency.email}`, `Email ${agency.email}`)}</>}
+          {topic === "contact" && <>{action(agency.telephone, `Call ${agency.phone}`)}{action(agency.sms, `Text us at ${agency.phone}`)}{action(`mailto:${agency.email}`, `Email ${agency.email}`)}</>}
         </div>
         <p className="assistant-note">This guided assistant helps you find information. For coverage confirmations, policy changes, or claims assistance, contact our team or your insurer.</p>
       </div>
