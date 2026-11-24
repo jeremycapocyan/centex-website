@@ -1,11 +1,50 @@
 export type BlogPost = {
   slug: string; title: string; description: string; category: string;
   published: string; updated: string; sourceDate: string; sourceTitle: string; sourceUrl: string;
+  additionalSources?: { title: string; url: string }[];
   image: string; imageAlt: string;
   coverage: string; sections: { heading: string; text: string }[];
 };
 
 export const posts: BlogPost[] = [
+  {
+    "slug": "texas-home-auto-insurance-appraisal-rules-2026",
+    "title": "Texas adopts new home and auto insurance appraisal rules",
+    "description": "Texas published new appraisal rules on November 20. Learn which policies are affected starting March 1, 2027, and what to ask when repair estimates differ.",
+    "category": "Consumer news",
+    "published": "2026-11-24",
+    "updated": "2026-11-24",
+    "sourceDate": "2026-11-20",
+    "sourceTitle": "TDI adopted appraisal requirements, Commissioner’s Order No. 2026-10210",
+    "sourceUrl": "https://www.tdi.texas.gov/rules/2026/documents/202610210.pdf",
+    "additionalSources": [
+      {
+        "title": "TDI rule calendar: publication and effective dates",
+        "url": "https://www.tdi.texas.gov/rules/2026/index.html"
+      }
+    ],
+    "image": "/images/texas-claim-appraisal-estimates.webp",
+    "imageAlt": "AI-generated illustration of home and auto repair estimates beside a tape measure and car key",
+    "coverage": "home",
+    "sections": [
+      {
+        "heading": "Three dates to keep straight",
+        "text": "Texas published the adopted appraisal rules on November 20, 2026. The rules take effect November 24, 2026, and the new process applies to eligible Texas personal auto and residential property policies that are delivered, issued for delivery, or renewed on or after March 1, 2027. Check when your policy was issued or renewed if you are dealing with a claim near that date."
+      },
+      {
+        "heading": "What appraisal can resolve",
+        "text": "If your insurer and repair shop give you different estimates after a collision, or a contractor and insurer put different amounts on home repairs, ask what accounts for the difference. Appraisal addresses a dispute about the amount of the loss. It does not decide whether the policy covers the damage or change the policy’s terms. Commercial policies and Texas Windstorm Insurance Association policies are outside these rules."
+      },
+      {
+        "heading": "What to look for in your claim notice",
+        "text": "For policies subject to the rules, the insurer must explain the appraisal process when it sends its notice accepting or rejecting the claim. Look for where to find the provision in your policy, how to request appraisal, which deadlines apply, and what expenses you may be responsible for. If you are relying on an earlier policy, ask which appraisal terms apply to that claim."
+      },
+      {
+        "heading": "What to bring to the conversation",
+        "text": "Keep the policy in force when the damage occurred, the insurer’s written decision and itemized estimate, and any contractor or repair shop estimate. Compare the documents line by line and flag differences such as labor rates or repair scope. If you have questions about where to find the appraisal provision or who to contact at your insurer, Centex Insurance Solutions can help you find the right starting point."
+      }
+    ]
+  },
   {
     "slug": "texas-insurance-fraud-task-force-consumer-update-2026",
     "title": "Texas launches an insurance fraud task force: what to know in Round Rock",
